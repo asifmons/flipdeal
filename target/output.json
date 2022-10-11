@@ -6,8 +6,8 @@
   "product" : "XTP mobile",
   "origin" : "Asia",
   "discount" : {
-    "amount" : 100.0,
-    "discountTag" : "get Rs 100 off"
+    "amount" : 50.0,
+    "discountTag" : "get 2% off"
   },
   "category" : "electronics",
   "new" : false
@@ -19,8 +19,8 @@
   "product" : "Maximize mobile",
   "origin" : "Asia",
   "discount" : {
-    "amount" : 360.0,
-    "discountTag" : "get 8% off"
+    "amount" : 90.0,
+    "discountTag" : "get 2% off"
   },
   "category" : "electronics",
   "new" : false
@@ -32,8 +32,8 @@
   "product" : "Jeet white shoes",
   "origin" : "Asia",
   "discount" : {
-    "amount" : 36.0,
-    "discountTag" : "get 2% off"
+    "amount" : 216.0,
+    "discountTag" : "get 12% off"
   },
   "category" : "clothing",
   "new" : false
@@ -45,8 +45,8 @@
   "product" : "Pearly tooth brush",
   "origin" : "Europe",
   "discount" : {
-    "amount" : 6.0,
-    "discountTag" : "get 4% off"
+    "amount" : 3.0,
+    "discountTag" : "get 2% off"
   },
   "category" : "grooming",
   "new" : false
@@ -58,8 +58,8 @@
   "product" : "BOA power bank",
   "origin" : "America",
   "discount" : {
-    "amount" : 175.92000000000002,
-    "discountTag" : "get 8% off"
+    "amount" : 43.980000000000004,
+    "discountTag" : "get 2% off"
   },
   "category" : "accessories",
   "new" : false
@@ -97,8 +97,8 @@
   "product" : "hawaiian shirts",
   "origin" : "Africa",
   "discount" : {
-    "amount" : 142.52,
-    "discountTag" : "get 7% off"
+    "amount" : 40.72,
+    "discountTag" : "get 2% off"
   },
   "category" : "apparels",
   "new" : false
@@ -110,8 +110,8 @@
   "product" : "water bottle",
   "origin" : "Africa",
   "discount" : {
-    "amount" : 34.300000000000004,
-    "discountTag" : "get 7% off"
+    "amount" : 58.8,
+    "discountTag" : "get 12% off"
   },
   "category" : "home",
   "new" : false
@@ -136,8 +136,8 @@
   "product" : "lunch box",
   "origin" : "Asia",
   "discount" : {
-    "amount" : 3.8000000000000003,
-    "discountTag" : "get 2% off"
+    "amount" : 22.8,
+    "discountTag" : "get 12% off"
   },
   "category" : "furnishing",
   "new" : false

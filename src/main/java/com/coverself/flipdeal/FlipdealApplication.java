@@ -10,7 +10,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import com.coverself.flipdeal.common.Common;
+import com.coverself.flipdeal.common.CommonURL;
 import com.coverself.flipdeal.controller.ProductController;
 import com.coverself.flipdeal.entity.Product;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -24,12 +24,12 @@ public class FlipdealApplication {
 
 		ProductController controller = context.getBean(ProductController.class);
 		if (args[0] != null) {
-			runApp(controller, "promotionSetA");
+			runApp(controller, args[0]);
 		}
 	}
 
 	public static void runApp(ProductController controller, String promotionType) {
-		String path = Common.OUTPUT_JSON_PATH;
+		String path = CommonURL.OUTPUT_JSON_PATH;
 		ObjectMapper mapper = new ObjectMapper();
 
 		Function<Product, String> objectToJson = p -> {

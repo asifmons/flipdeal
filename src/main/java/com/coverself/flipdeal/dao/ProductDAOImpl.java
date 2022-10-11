@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;
 
-import com.coverself.flipdeal.common.Common;
+import com.coverself.flipdeal.common.CommonURL;
 import com.coverself.flipdeal.entity.ExchangeRates;
 import com.coverself.flipdeal.entity.Product;
 
@@ -21,7 +21,7 @@ public class ProductDAOImpl implements ProductDAO {
 	public List<Product> getProducts() {
 		URI uri = null;
 		try {
-			uri = new URI(Common.PRODUCTS_URI);
+			uri = new URI(CommonURL.PRODUCTS_URI);
 		} catch (URISyntaxException e) {
 			e.printStackTrace();
 		}
@@ -36,7 +36,7 @@ public class ProductDAOImpl implements ProductDAO {
 	public HashMap<String, Double> getExchangeRates() {
 		URI uri = null;
 		try {
-			uri = new URI(Common.EXCHANGE_RATES_URI);
+			uri = new URI(CommonURL.EXCHANGE_RATES_URI);
 		} catch (URISyntaxException e) {
 			e.printStackTrace();
 		}

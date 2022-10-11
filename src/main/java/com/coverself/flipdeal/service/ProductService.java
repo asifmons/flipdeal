@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.coverself.flipdeal.common.PromotionType;
 import com.coverself.flipdeal.dao.ProductDAO;
 import com.coverself.flipdeal.entity.Discount;
 import com.coverself.flipdeal.entity.Product;
@@ -16,13 +17,13 @@ import com.coverself.flipdeal.entity.Product;
 public class ProductService implements ProductServiceInterface {
 
 	@Autowired
-	ProductDAO productdao;
+	ProductDAO productDao;
 
 	@Override
 	public List<Product> getProductsWithDiscount(String discountType) {
 
-		List<Product> products = productdao.getProducts();
-		HashMap<String, Double> rates = productdao.getExchangeRates();
+		List<Product> products = productDao.getProducts();
+		HashMap<String, Double> rates = productDao.getExchangeRates();
 
 		Function<Product, Product> priceToINR = p -> {
 			p.setPrice(p.getPrice() / rates.get(p.getCurrency()));
@@ -47,13 +48,13 @@ public class ProductService implements ProductServiceInterface {
 		return productsWithDiscount;
 	}
 
-	private static void setDiscount(Product p, String discountType) {
+	private static void setDiscount(Product product, String discountType) {
 		switch (discountType) {
-		case "promotionSetA":
-			setPromotionSetA(p);
+		case PromotionType.PROMOTION_SET_A:
+			setPromotionSetA(product);
 			break;
-		case "promotionSetB":
-			setPromotionSetB(p);
+		case PromotionType.PROMOTION_SET_B:
+			setPromotionSetB(product);
 			break;
 		}
 	}
